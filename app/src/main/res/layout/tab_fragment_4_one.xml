@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.hs.namgong.jms.TabFragment4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <RelativeLayout
+            android:id="@+id/fr4_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/sb2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_berry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb2"
+                android:layout_toRightOf="@+id/sb2"
+                android:text=" 예약관련 안내사항"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fr4_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fr4_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/textview"
+            android:padding="10dp"
+            android:text="
+1. 딸기잼만들기 체험은 약 300g 2병(12,000원) 이상 구매시 체험가능합니다.\n\n
+2. 딸기따기체험은 성인(중학생이상)은 약1kg Pack (15,000원), 어린이(6세~초등6학년) 약 500g Pack (10,000원)을 1인 1Pack씩 들고 있으셔야 하며 없으시면 하우스 입장 불가입니다.\n\n
+3. 유아(신생아~5세까지)는 부모님 한 분(성인비용/15,000원)당 한 명씩 동반 입장 가능합니다.\n\n
+4. 딸기피자체험은 1판(15,000원) 단위로 비용 계산하시면 됩니다.\n\n
+5. 예약신청후 체험비(쨈,피자만들기비용 포함)를 같은 이름으로 입금해주세요\n
+( 입금계좌 : 농협 351 02582439 33 윤흥진 )\n\n
+6. 예약확인은 신청 및 입급 후 약 24시간 후 예약현황(입금 확인후)에서 확인이 가능합니다." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fr4_main"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/fr4_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/fr4_check"
+                android:layout_toRightOf="@+id/fr4_check"
+                android:text=" 안내사항을 읽고 확인하였습니다." />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fr4_btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/mainColor"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="확인하였습니다."
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="92" />
+
+    <RelativeLayout
+        android:id="@+id/notice_detail_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="22">
+
+        <TextView
+            android:id="@+id/content_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dip"
+            android:paddingTop="4dip"
+            android:text="작성일"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/content_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/content_writer"
+            android:layout_toLeftOf="@+id/content_date"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dip"
+            android:paddingTop="4dip"
+            android:text="제목"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/content_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingRight="10dip"
+            android:paddingTop="4dip"
+            android:text="작성자"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/content_subject"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:id="@+id/separate"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/content_subject"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <ScrollView
+
+            android:id="@+id/scrollv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separate">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/textView_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_margin="10dp"
+                    android:textColor="#000000" />
+
+
+                <View
+                    android:id="@+id/separate_tail"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textView_detail"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textView_tail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/separate_tail"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/btn"
+                    android:textColor="#000000" />
+
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/textView_tail"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/download"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Rel_interface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="86"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:textSize="70dp" />
+
+        <Button
+            android:id="@+id/school_home_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
